@@ -8,9 +8,10 @@
   --color-white: #faf6eb;
 
   /* Fonts */
-  --font-title-dynapuff: 2vw "DynaPuff", system-ui;
+  --font-title-dynapuff: 2rem "DynaPuff", system-ui;
   --font-dynapuff: 1rem "DynaPuff", system-ui;
-  --font-nav-outfit: 2vw "Outfit", sans-serif;
+  --font-nav-outfit: 2rem "Outfit", sans-serif;
+  --font-title-outfit: 1.75rem "Outfit", sans-serif;
   --font-outfit: 1rem "Outfit", sans-serif;
 }
 
