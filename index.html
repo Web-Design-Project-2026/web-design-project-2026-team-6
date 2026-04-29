@@ -53,34 +53,45 @@
       </section>
     </main>
     <footer>
-      <address>
-        <span>Contact:</span>
-        <a href="tel:55555555555555">Phone: 555-5555-5555-555</a>
-        <a href="mailto:bageri@ringblomman.se">Email: bageri@ringblomman.se</a>
-        <span>Find us:</span>
-        <span>Address: Östra Storgatan 7-9 553 21 Jönköping</span>
-      </address>
-      <iframe
-        width="425"
-        height="350"
-        src="https://www.openstreetmap.org/export/embed.html?bbox=14.168608188629152%2C57.78201459386919%2C14.171942174434664%2C57.78308707639543&amp;layer=mapnik&amp;marker=57.78255083911447%2C14.170275181531906"
-      >
-      </iframe>
-      <article>
-        <h2>Opening hours:</h2>
-        <article>
-          <h3>Monday-Friday</h3>
-          <p>11:00-20:00</p>
+      <div class="footer-column">
+        <address>
+          <span id="footer-contact">Contact:</span>
+          <a href="tel:55555555555555">Phone: 555-5555-5555-555</a><br />
+          Email:
+          <a href="mailto:bageri@ringblomman.se"
+            >Email: bageri@ringblomman.se</a
+          >
+          <span id="footer-location"> Find us:</span>
+          Address: Östra Storgatan 1 <br />
+          Jönköping 553 21
+        </address>
+      </div>
+      <div class="footer-column">
+        <iframe
+          class="map"
+          width="425"
+          height="350"
+          src="https://www.openstreetmap.org/export/embed.html?bbox=14.168608188629152%2C57.78201459386919%2C14.171942174434664%2C57.78308707639543&amp;layer=mapnik&amp;marker=57.78255083911447%2C14.170275181531906"
+        >
+        </iframe>
+      </div>
+      <div class="footer-column">
+        <article class="hours">
+          <h2>Opening hours:</h2>
+          <article class="day's hours">
+            <h3>Monday-Friday</h3>
+            <p>11:00-20:00</p>
+          </article>
+          <article class="day's hours">
+            <h3>Saturday</h3>
+            <p>12:00-18:00</p>
+          </article>
+          <article class="day's hours">
+            <h3>Sunday</h3>
+            <p>12:00-16:00</p>
+          </article>
         </article>
-        <article>
-          <h3>Saturday</h3>
-          <p>12:00-18:00</p>
-        </article>
-        <article>
-          <h3>Sunday</h3>
-          <p>12:00-16:00</p>
-        </article>
-      </article>
+      </div>
     </footer>
   </body>
 </html>
