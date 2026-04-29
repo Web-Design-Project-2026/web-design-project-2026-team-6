@@ -1,6 +1,33 @@
+/* header */
+
 header {
   position: sticky;
   top: 0;
-  background: var(--Pure-White, #FAF6EB);
+  background: var(--color-white);
   box-shadow: 0 4px 11.6px 1px rgba(0, 0, 0, 0.25);
   margin-bottom: 6vh;
+}
+
+header ul {
+  padding: 2vw;
+}
+
+header li {
+  list-style-type: none;
+}
+
+header li a {
+  font: var(--font-outfit);
+  color: var(--color-orange);
+  text-decoration: none;
+}
+
+.logo-text {
+  font: var(--font-dynapuff);
+  color: var(--color-orange);
+  text-decoration: none;
+}
+
+/* Body */
+
+/* footer */
