@@ -1,0 +1,142 @@
+/* header */
+body {
+  /*display: grid;*/
+  background-color: var(--color-cream);
+  margin: 0;
+}
+
+header {
+  max-width: 100%;
+  position: sticky;
+  top: 0;
+  background: var(--color-white);
+  box-shadow: 0 4px 11.6px 1px rgba(0, 0, 0, 0.25);
+  margin-bottom: 0;
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  z-index: 67;
+}
+
+header ul {
+  padding: 2vw;
+}
+
+header li {
+  list-style-type: none;
+}
+
+header li a {
+  font: var(--font-nav-outfit);
+  color: var(--color-orange);
+  text-decoration: none;
+}
+
+.logo-text {
+  font: var(--font-title-dynapuff);
+  color: var(--color-orange);
+  text-decoration: none;
+  padding: 0;
+}
+.site-nav {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+}
+.site-nav nav {
+  display: flex;
+  flex-grow: 1;
+}
+.site-nav ul {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+.nav-links {
+  display: flex;
+  align-items: center;
+  padding: 0 2vw;
+  margin-left: auto;
+}
+
+.site-nav a {
+  padding: 0 1.25vw;
+}
+
+header > button {
+  margin-right: 2vw;
+}
+
+/* main */
+.hero-grid {
+  display: grid;
+}
+.menu-button {
+  transition: 0.2s ease-in-out;
+  width: 26.25rem;
+  height: 7.5rem;
+  border-radius: 23px;
+  border: 5px solid var(--color-cream);
+  background-color: transparent;
+  font: var(--font-menu-button-outfit);
+  color: var(--color-cream);
+  grid-area: 1/1;
+  z-index: 1;
+  place-self: center;
+}
+
+.menu-button:hover {
+  transition: 0.2s ease-in-out;
+  background-color: var(--color-cream);
+  color: var(--color-green);
+  border: 5px solid var(--color-cream);
+  cursor: pointer;
+}
+.chocolate-cake-background {
+  grid-area: 1/1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(10px);
+}
+
+.picture-text-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10vh;
+  margin: 10vh 4vw;
+  align-items: center;
+}
+
+.picture-text-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 23px;
+}
+
+.body-title {
+  font: var(--font-title-outfit);
+  color: var(--color-green);
+  margin: 0 0 2vh 0;
+}
+
+.body-text {
+  font: var(--font-outfit);
+  margin: 0;
+}
+
+/* footer */
