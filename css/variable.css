@@ -1,0 +1,48 @@
+:root {
+  /* COLORS */
+  --color-black: #1d1326;
+  --color-green: #405c1d;
+  --color-orange: #f27405;
+  --color-yellow: #f2cb05;
+  --color-cream: #f2ebc4;
+  --color-white: #faf6eb;
+
+  /* Fonts */
+  --font-dynapuff: 1rem "DynaPuff", system-ui;
+  --font-outfit: 1rem "Outfit", sans-serif;
+}
+
+/* 
+---------------------------------------
+EXAMPLE on how to use variables
+---------------------------------------
+body {
+  background-color: var(--color-cream);
+  font: var(--font-dynapuff);
+}
+---------------------------------------
+
+---------------------------------------
+Font settings
+---------------------------------------
+// <weight>: Use a value from 400 to 700
+// <uniquifier>: Use a unique and descriptive class name
+
+.dynapuff-<uniquifier> {
+  font-family: "DynaPuff", system-ui;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+// <weight>: Use a value from 100 to 900
+// <uniquifier>: Use a unique and descriptive class name
+
+.outfit-<uniquifier> {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  */
