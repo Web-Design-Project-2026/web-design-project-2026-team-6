@@ -85,9 +85,25 @@ header > button {
   display: grid;
 }
 .menu-button {
+  transition: 0.2s ease-in-out;
+  width: 26.25rem;
+  height: 7.5rem;
+  border-radius: 23px;
+  border: 5px solid var(--color-cream);
+  background-color: transparent;
+  font: var(--font-menu-button-outfit);
+  color: var(--color-cream);
   grid-area: 1/1;
   z-index: 1;
   place-self: center;
+}
+
+.menu-button:hover {
+  transition: 0.2s ease-in-out;
+  background-color: var(--color-cream);
+  color: var(--color-green);
+  border: 5px solid var(--color-cream);
+  cursor: pointer;
 }
 .chocolate-cake-background {
   grid-area: 1/1;
@@ -115,7 +131,7 @@ header > button {
 .body-title {
   font: var(--font-title-outfit);
   color: var(--color-green);
-  margin-bottom: 2vh;
+  margin: 0 0 2vh 0;
 }
 
 .body-text {
