@@ -1,6 +1,22 @@
 header {
   position: sticky;
   top: 0;
-  background: var(--Pure-White, #FAF6EB);
+  background: var(--Pure-White, #faf6eb);
   box-shadow: 0 4px 11.6px 1px rgba(0, 0, 0, 0.25);
   margin-bottom: 6vh;
+}
+footer {
+  display: grid;
+  place-items: center;
+  grid-auto-flow: row;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  background: var(--color-orange);
+}
+address {
+  display: flex;
+  flex-direction: column;
+}
+iframe {
+  border-radius: 1em;
+}
