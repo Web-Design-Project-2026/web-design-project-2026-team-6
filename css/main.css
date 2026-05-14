@@ -76,6 +76,10 @@ header li a {
   padding: 0 1.25vw;
 }
 
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
 header > button {
   margin-right: 2vw;
 }
