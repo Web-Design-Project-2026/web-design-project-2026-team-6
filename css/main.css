@@ -117,7 +117,7 @@ header > button {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10vh;
-  margin: 10vh 4vw;
+  margin: var(--header-spacing-top) 4vw;
   align-items: center;
 }
 
