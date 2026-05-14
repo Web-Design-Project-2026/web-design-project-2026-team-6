@@ -84,6 +84,16 @@ header > button {
   margin-right: 2vw;
 }
 
+#change-language {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+#change-language svg {
+  width: 3.5vw;
+}
+
 /* main */
 .hero-grid {
   display: grid;
