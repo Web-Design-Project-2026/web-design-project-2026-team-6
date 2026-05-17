@@ -100,6 +100,21 @@ header > button {
   width: 3.5vw;
 }
 
+/* vector colors */
+
+.cls-1 {
+  fill: var(--color-white);
+}
+
+.cls-2 {
+  fill: var(--color-orange);
+}
+
+.cls-3 {
+  fill: var(--color-yellow);
+  fill-rule: evenodd;
+}
+
 /* main */
 .hero-grid {
   display: grid;
