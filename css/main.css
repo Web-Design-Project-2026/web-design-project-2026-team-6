@@ -8,12 +8,14 @@ body {
   margin: 0;
   grid-template-rows: 1fr auto;
   min-height: 100%;
+  display: grid;
   grid-template-areas:
     "header"
     "main"
     "footer";
 }
 header {
+  grid-area: header;
   max-width: 100%;
   position: sticky;
   background: var(--color-white);
@@ -116,6 +118,10 @@ header > button {
 }
 
 /* main */
+.main {
+  grid-area: main;
+}
+
 .hero-grid {
   display: grid;
 }
@@ -176,6 +182,7 @@ header > button {
 
 /* footer */
 footer {
+  grid-area: footer;
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
@@ -184,7 +191,6 @@ footer {
   align-items: center;
   gap: 7.25rem;
   color: var(--color-white);
-  grid-area: footer;
 }
 address {
   display: block;
@@ -210,3 +216,6 @@ address {
   display: block;
   font: var(--font-dynapuff);
 }
+
+/* Break points */
+
