@@ -118,8 +118,11 @@ header > button {
 }
 
 /* main */
-.main {
+
+main {
   grid-area: main;
+  display: grid;
+  place-items: center;
 }
 
 .hero-grid {
@@ -157,8 +160,8 @@ header > button {
 .picture-text-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 10vh;
-  margin: var(--header-spacing-top) 4vw;
+  gap: 10vw;
+  margin: var(--header-spacing-top) 4vw 0 4vw;
   align-items: center;
 }
 
@@ -219,3 +222,17 @@ address {
 
 /* Break points */
 
+@media screen and (max-width: 679px) {
+  .menu-button {
+    width: 90vw;
+    height: 20vw;
+    font-size: min(2.5rem);
+  }
+
+  .picture-text-grid {
+    grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+  }
+  .text-grid {
+    order: 2;
+  }
+}
