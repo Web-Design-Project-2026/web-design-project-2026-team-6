@@ -14,6 +14,7 @@ body {
     "main"
     "footer";
 }
+
 header {
   grid-area: header;
   max-width: 100%;
@@ -48,6 +49,7 @@ header li a {
   text-decoration: none;
   padding: 0;
 }
+
 .site-nav {
   display: flex;
   align-items: center;
@@ -73,19 +75,19 @@ header li a {
   display: flex;
   align-items: center;
 }
-.nav-links {
+#nav-links {
   display: flex;
   align-items: center;
   padding: 0 2vw;
   margin-left: auto;
 }
 
-.site-nav a {
-  padding: 0 1.25vw;
+#nav-links a:hover {
+  text-decoration: underline;
 }
 
-.nav-links a:hover {
-  text-decoration: underline;
+.site-nav a {
+  padding: 0 1.25vw;
 }
 
 header > button {
@@ -116,7 +118,9 @@ header > button {
   fill: var(--color-yellow);
   fill-rule: evenodd;
 }
-
+#hamburger-menu-button {
+  display: none;
+}
 /* main */
 
 main {
@@ -228,11 +232,55 @@ address {
     height: 20vw;
     font-size: min(2.5rem);
   }
-
   .picture-text-grid {
     grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
   }
+
   .text-grid {
     order: 2;
+  }
+}
+
+@media screen and (max-width: 805px) {
+  .logo {
+    align-self: start;
+  }
+
+  .logo-text {
+    align-self: start;
+    font-size: min(1.5rem);
+    padding: 4vw 0;
+  }
+
+  #nav-links {
+    display: none;
+    flex-direction: column;
+    margin: 4vw 0;
+    gap: 4vw;
+  }
+
+  header li a {
+    font-size: min(2.5rem);
+  }
+
+  .site-nav ul {
+    flex-direction: column;
+  }
+
+  #change-language {
+    /* floating button */
+    position: fixed;
+    right: 1vw;
+    bottom: 1vw;
+  }
+
+  #change-language svg {
+    width: 48px;
+  }
+
+  #hamburger-menu-button {
+    display: flex;
+    margin: 9vw 2vw;
+    align-self: start;
   }
 }
