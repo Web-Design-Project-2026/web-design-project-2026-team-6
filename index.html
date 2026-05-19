@@ -10,8 +10,19 @@
       href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Outfit:wght@100..900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
     <link rel="stylesheet" href="css/variable.css" />
     <link rel="stylesheet" href="css/main.css" />
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
     <script src="#" defer></script>
   </head>
   <body>
@@ -109,7 +120,7 @@
             take the time out of their day to come and try our food.
           </p>
         </div>
-        <img
+        <imgcancer
           class="picture-text-image"
           src="assets/pexels-pavel-danilyuk-6996354.jpg"
           alt="Display case with small plated desserts."
@@ -117,41 +128,51 @@
       </section>
     </main>
     <footer>
-      <div class="footer-column">
-        <address>
-          <span id="footer-contact">Contact:</span>
-          <br />
-          <a href="tel:55555555555555">Phone: 555-5555-5555-555</a><br />
+      <div class="footer-column-1">
+        <address class="footer-info">
+          <h2 id="footer-contact">Contact:</h2>
+          Phone:
+          <a href="tel:55555555555555" style="color: var(--color-white)"
+            >555-5555-5555-555</a
+          ><br />
           Email:
-          <a href="mailto:bageri@ringblomman.se"
-            >Email: bageri@ringblomman.se</a
+          <a
+            href="mailto:bageri@ringblomman.se"
+            style="color: var(--color-white)"
+            >bageri@ringblomman.se</a
           >
-          <span id="footer-location"> Find us:</span>
-          Address: Östra Storgatan 1 <br />
+          <br />
+          <h2 id="footer-location">Find us:</h2>
+          Address:<br />
+          Östra Storgatan 1 <br />
           Jönköping 553 21
         </address>
       </div>
-      <div class="footer-column">
-        <iframe
-          class="map"
-          width="425"
-          height="350"
-          src="https://www.openstreetmap.org/export/embed.html?bbox=14.168608188629152%2C57.78201459386919%2C14.171942174434664%2C57.78308707639543&amp;layer=mapnik&amp;marker=57.78255083911447%2C14.170275181531906"
-        >
-        </iframe>
+      <div class="footer-column-2">
+        <div id="map">
+          <script>
+            var map = L.map("map").setView([57.782633, 14.169606], 18);
+            var marker = L.marker([57.782633, 14.16955]).addTo(map);
+            L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+              maxZoom: 19,
+              attribution:
+                '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+            }).addTo(map);
+          </script>
+        </div>
       </div>
-      <div class="footer-column">
+      <div class="footer-column-3">
         <article class="hours">
           <h2>Opening hours:</h2>
-          <article class="day's hours">
+          <article class="day-hours">
             <h3>Monday-Friday</h3>
             <p>11:00-20:00</p>
           </article>
-          <article class="day's hours">
+          <article class="day-hours">
             <h3>Saturday</h3>
             <p>12:00-18:00</p>
           </article>
-          <article class="day's hours">
+          <article class="day-hours">
             <h3>Sunday</h3>
             <p>12:00-16:00</p>
           </article>
