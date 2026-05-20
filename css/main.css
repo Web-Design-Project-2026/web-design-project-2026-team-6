@@ -257,19 +257,20 @@ p {
   }
   footer {
     flex-wrap: wrap;
-    flex-direction: column;
     align-items: center;
-    padding-left: 0;
-    padding-right: 0;
+
     gap: 2vh;
   }
 
   .footer-column-2 {
     flex: 1;
+    order: 3;
+    justify-content: center;
+    display: flex;
   }
   #map {
-    width: 50vw;
-    height: 30vh;
+    width: 80vw;
+    height: 30vw;
   }
 }
 
