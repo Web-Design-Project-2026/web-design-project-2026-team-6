@@ -169,7 +169,7 @@ main {
   border: 5px solid var(--color-cream);
   cursor: pointer;
 }
-.chocolate-cake-background {
+.hero-background {
   grid-area: 1/1;
   width: 100%;
   height: 100%;

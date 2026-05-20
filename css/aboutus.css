@@ -1,0 +1,9 @@
+.picture-text-image {
+  height: auto;
+  width: auto;
+  max-height: 40rem;
+  max-width: 40rem;
+}
+.picture-grid {
+  margin: var(--header-spacing-top);
+}
