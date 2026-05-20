@@ -233,6 +233,7 @@ footer {
   border-radius: 1em;
   width: 100%;
   height: 20vw;
+  z-index: 0;
 }
 #footer-contact {
   font: var(--font-dynapuff);
