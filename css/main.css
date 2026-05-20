@@ -6,7 +6,7 @@ body {
   /*display: grid;*/
   background-color: var(--color-cream);
   margin: 0;
-  grid-template-rows: 1fr auto;
+  grid-template-rows: 1fr auto auto;
   min-height: 100%;
   display: grid;
   grid-template-areas:
@@ -51,10 +51,8 @@ header li a {
 .logo-text {
   font: var(--font-title-dynapuff);
   color: var(--color-orange);
-  padding: 0;
   text-wrap: nowrap;
   padding-left: 2vw;
-  margin: 0;
 }
 
 .header {
@@ -150,6 +148,14 @@ main {
   border: 5px solid var(--color-cream);
   background-color: transparent;
   font: var(--font-menu-button-outfit);
+  color: var(--color-cream);
+  grid-area: 1/1;
+  z-index: 1;
+  place-self: center;
+}
+
+.hero-text {
+  font: var(--font-hero-outfit);
   color: var(--color-cream);
   grid-area: 1/1;
   z-index: 1;
@@ -359,5 +365,9 @@ p {
     background: none;
     border: none;
     scale: 70%;
+  }
+
+  .hero-text {
+    font-size: 5rem;
   }
 }
