@@ -11,16 +11,19 @@ const hamburgerClosed = "assets/hamburger.svg";
 
 //VARIABLES
 let open = false;
+let turn = 0;
 
 menuButton.addEventListener("click", openCloseHamburgerMenu);
 
 function openCloseHamburgerMenu() {
   if (open === false) {
     navLinks.style.display = "flex";
+    menuIcon.style.transform = "rotate(360deg)";
     menuIcon.src = hamburgerOpen;
     open = true;
   } else {
     navLinks.style.display = "none";
+    menuIcon.style.transform = "rotate(0deg)";
     menuIcon.src = hamburgerClosed;
     open = false;
   }

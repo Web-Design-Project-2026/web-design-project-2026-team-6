@@ -123,8 +123,13 @@ header > button {
   fill: var(--color-yellow);
   fill-rule: evenodd;
 }
+
 #hamburger-menu-button {
   display: none;
+}
+
+.hamburger-icon {
+  transition: all 0.5s ease-in;
 }
 /* main */
 
