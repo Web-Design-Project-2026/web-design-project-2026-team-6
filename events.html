@@ -19,12 +19,14 @@
     />
     <link rel="stylesheet" href="css/variable.css" />
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/events.css" />
     <script
       src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
       integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
       crossorigin=""
     ></script>
     <script src="js/main.js" defer></script>
+    <script src="js/events.js" defer></script>
   </head>
   <body>
     <header class="header">
@@ -76,13 +78,89 @@
       </button>
     </header>
     <main>
+      <form class="apply-form">
+        <button class="cancel-form-button">X</button>
+        <label class="event-title" for="name"
+          >Please type in your information:
+        </label>
+        <input
+          type="text"
+          name="email"
+          id="email"
+          placeholder="Type your email here"
+          required
+        />
+        <input class="event-apply-button-form" type="submit" value="Apply" />
+      </form>
       <div class="hero-grid">
         <img
           class="chocolate-cake-background"
           src="assets/pexels-valeriya-15366687cropped.jpg"
           alt="Blurred chocolate cakes"
         />
+        <h1 class="hero-text">EVENTS</h1>
       </div>
+      <section class="event-title-grid">
+        <h2 class="event-title-text">Upcoming events</h2>
+        <div class="event-grid">
+          <article class="event">
+            <img
+              class="event-image"
+              src="assets/pexels-shameel-mukkath-3421394-5112529.jpg"
+              alt="REMEBER TO PUT ALT TEXT HERE"
+            />
+            <h3 class="event-title">Event</h3>
+            <p class="event-time">Källaren | 04/16 | 17:00</p>
+            <p class="event-paragraph">
+              dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua.
+            </p>
+            <button class="event-apply-button">Apply</button>
+          </article>
+          <article class="event">
+            <img
+              class="event-image"
+              src="assets/pexels-shameel-mukkath-3421394-5112529.jpg"
+              alt="REMEBER TO PUT ALT TEXT HERE"
+            />
+            <h3 class="event-title">Event</h3>
+            <p class="event-time">Källaren | 04/16 | 17:00</p>
+            <p class="event-paragraph">
+              dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua.
+            </p>
+            <button class="event-apply-button">Apply</button>
+          </article>
+          <article class="event">
+            <img
+              class="event-image"
+              src="assets/pexels-shameel-mukkath-3421394-5112529.jpg"
+              alt="REMEBER TO PUT ALT TEXT HERE"
+            />
+            <h3 class="event-title">Event</h3>
+            <p class="event-time">Källaren | 04/16 | 17:00</p>
+            <p class="event-paragraph">
+              dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua.
+            </p>
+            <button class="event-apply-button">Apply</button>
+          </article>
+          <article class="event">
+            <img
+              class="event-image"
+              src="assets/pexels-shameel-mukkath-3421394-5112529.jpg"
+              alt="REMEBER TO PUT ALT TEXT HERE"
+            />
+            <h3 class="event-title">Event</h3>
+            <p class="event-time">Källaren | 04/16 | 17:00</p>
+            <p class="event-paragraph">
+              dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua.
+            </p>
+            <button class="event-apply-button">Apply</button>
+          </article>
+        </div>
+      </section>
     </main>
     <footer class="footer">
       <div class="footer-column-1">
