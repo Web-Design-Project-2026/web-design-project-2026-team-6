@@ -53,12 +53,14 @@ body {
 .logo-container a {
   text-decoration: none;
 }
-
+.logo {
+  text-wrap: nowrap;
+}
 .logo-text {
   font: var(--font-title-dynapuff);
   color: var(--color-orange);
-  text-wrap: nowrap;
-  padding-left: 2vw;
+  padding: 0;
+  margin: 0 1vw;
 }
 
 .header nav {
@@ -267,7 +269,7 @@ p {
 /* Break points */
 
 @media screen and (max-width: 679px) {
-  .menu-button {
+  .menu-button-style {
     width: 90vw;
     height: 20vw;
     font-size: min(2.5rem);
@@ -300,7 +302,7 @@ p {
     height: 30vw;
   }
 
-  .menu-button {
+  .menu-button-style {
     width: 90vw;
     height: 20vw;
     font-size: min(2.5rem);
