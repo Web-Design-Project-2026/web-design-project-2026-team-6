@@ -1,0 +1,44 @@
+.picture-text-grid {
+  grid-template-areas: "text portrait" "landscape1 landscape2";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr auto;
+  gap: 0;
+  row-gap: 2vw;
+  column-gap: 2vw;
+}
+.text-grid {
+  grid-area: text;
+  width: auto;
+  height: auto;
+  align-self: start;
+}
+.text-grid p + p {
+  text-indent: 2vw each-line;
+  margin-top: 1vw;
+}
+.picture-text-portrait {
+  grid-area: portrait;
+  width: 100%;
+  height: auto;
+  border-radius: 23px;
+}
+#picture-about-left {
+  grid-area: landscape1;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 23px;
+}
+#picture-about-right {
+  grid-area: landscape2;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 23px;
+}
+
+@media screen and (max-width: 600px) {
+  .picture-text-grid {
+    grid-template-areas: "portrait" "text" "landscape1" "landscape2";
+    grid-template-columns: 1fr;
+    row-gap: 4vw;
+  }
+}
