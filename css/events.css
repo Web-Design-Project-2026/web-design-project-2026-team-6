@@ -63,6 +63,7 @@ main {
   width: 20%;
   margin: 0.5vw 0;
   padding: 0.5vw 1vw;
+  z-index: 1;
 }
 
 #email {
@@ -82,13 +83,14 @@ main {
   width: 50vw;
   border-radius: 23px;
   padding: 1.5vw 1vw;
-  z-index: 99;
+  z-index: 0;
   box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.3);
   gap: 1vw;
 }
 
 .open {
   opacity: 1;
+  z-index: 99;
 }
 
 /* Break points */
