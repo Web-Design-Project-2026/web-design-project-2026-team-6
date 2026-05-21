@@ -91,7 +91,7 @@ body {
   text-decoration: underline;
 }
 
-.header a {
+.header .nav-button {
   padding: 0 1.25vw;
 }
 
