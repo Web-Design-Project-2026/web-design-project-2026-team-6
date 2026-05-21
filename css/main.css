@@ -55,11 +55,12 @@ body {
 }
 .logo {
   text-wrap: nowrap;
+  padding: 0;
 }
 .logo-text {
   font: var(--font-title-dynapuff);
   color: var(--color-orange);
-  padding: 0;
+  padding: 0 1.25vw;
   margin: 0 1vw;
 }
 
