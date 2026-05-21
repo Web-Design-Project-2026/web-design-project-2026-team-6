@@ -1,0 +1,125 @@
+/* EVENTS */
+main {
+  place-items: normal;
+}
+
+.event-title-grid {
+  display: grid;
+  margin: var(--header-spacing-top) 12vw 0 12vw;
+}
+
+.event-title-text {
+  font: var(--font-title-outfit);
+  margin: 0 0 0.5vw 1.5vw;
+}
+
+.event-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border-radius: 23px;
+  border-top: 1px solid var(--color-black);
+  gap: 1vw;
+  padding: 1vw;
+}
+
+.event {
+  display: grid;
+  background-color: var(--color-white);
+  border-radius: 23px;
+  padding: 1.5vw 1vw;
+  gap: 1vw;
+}
+
+.event-image {
+  width: 100%;
+  place-self: center;
+}
+
+.event-title {
+  font: var(--font-title-outfit);
+}
+
+.event-time {
+  font: var(--font-title-outfit);
+}
+
+.event-paragraph {
+  font: var(--font-outfit);
+}
+
+.cancel-form-button {
+  place-self: end;
+  font: var(--font-outfit);
+  background-color: transparent;
+  border: transparent;
+}
+
+.event-apply-button,
+.event-apply-button-form {
+  color: var(--color-white);
+  background-color: var(--color-green);
+  font: var(--font-outfit);
+  border-radius: 23px;
+  width: 20%;
+  margin: 0.5vw 0;
+  padding: 0.5vw 1vw;
+}
+
+#email {
+  font: var(--font-outfit);
+}
+
+/* Application Form */
+
+.apply-form {
+  display: grid;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  background-color: var(--color-white);
+  width: 50vw;
+  border-radius: 23px;
+  padding: 1.5vw 1vw;
+  z-index: 99;
+  box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.3);
+  gap: 1vw;
+}
+
+.open {
+  opacity: 1;
+}
+
+/* Break points */
+
+@media screen and (max-width: 1157px) {
+  .event {
+    padding: 3vw 2vw;
+  }
+  .event-title-grid {
+    margin: var(--header-spacing-top) 2vw 0 2vw;
+  }
+}
+
+@media screen and (max-width: 683px) {
+  .event-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .event {
+    padding: 4vw 3vw;
+  }
+
+  .event-title-grid {
+    margin: var(--header-spacing-top) 3vw 0 3vw;
+  }
+
+  .apply-form {
+    padding: 3.5vw 3vw;
+  }
+
+  .apply-form {
+    width: 90vw;
+  }
+}
