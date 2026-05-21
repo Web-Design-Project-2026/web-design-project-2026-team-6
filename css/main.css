@@ -140,6 +140,11 @@ main {
   display: grid;
 }
 .menu-button {
+  grid-area: 1/1;
+  z-index: 1;
+  place-self: center;
+}
+.menu-button-style {
   transition: 0.2s ease-in-out;
   width: 26.25rem;
   height: 7.5rem;
@@ -148,11 +153,7 @@ main {
   background-color: transparent;
   font: var(--font-menu-button-outfit);
   color: var(--color-cream);
-  grid-area: 1/1;
-  z-index: 1;
-  place-self: center;
 }
-
 .hero-text {
   font: var(--font-hero-outfit);
   color: var(--color-cream);
@@ -161,7 +162,7 @@ main {
   place-self: center;
 }
 
-.menu-button:hover {
+.menu-button-style:hover {
   transition: 0.2s ease-in-out;
   background-color: var(--color-cream);
   color: var(--color-green);
