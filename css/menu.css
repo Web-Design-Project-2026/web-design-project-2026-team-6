@@ -5,7 +5,7 @@ main {
 
 .menu-category {
   display: grid;
-  margin: var(--header-spacing-top) 2vw 0 2vw;
+  margin: var(--header-spacing-top) 3vw 0 3vw;
 }
 
 .menu-category-text {
@@ -43,9 +43,14 @@ main {
   font: var(--font-outfit);
 }
 
-.allergen-symbols {
+.allergen-symbol-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  gap: 2vw;
+}
+
+.allergren-symbol {
+  width: 3vw;
 }
 
 /* Break points */
@@ -58,6 +63,10 @@ main {
   .menu-item {
     padding: 3vw 2vw;
   }
+
+  .allergren-symbol {
+    width: 5vw;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -67,5 +76,9 @@ main {
 
   .menu-item {
     padding: 4vw 3vw;
+  }
+
+  .allergren-symbol {
+    width: 10vw;
   }
 }
