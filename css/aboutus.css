@@ -10,10 +10,8 @@
   grid-area: text;
   width: auto;
   height: auto;
-  align-self: start;
 }
 .text-grid p + p {
-  text-indent: 2vw each-line;
   margin-top: 1vw;
 }
 .picture-text-portrait {
