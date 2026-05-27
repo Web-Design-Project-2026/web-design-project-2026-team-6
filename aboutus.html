@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us | Ringblommans Bageri</title>
+    <link rel="icon" href="assets/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <link rel="stylesheet" href="css/variable.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/aboutus.css" />
+
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo-container">
+        <a class="logo-text" href="index.html">Ringblommans Bageri</a>
+      </div>
+      <nav>
+        <ul>
+          <div id="nav-links">
+            <li><a class="nav-button" href="menu.html">menu</a></li>
+            <li><a class="nav-button" href="events.html">events</a></li>
+            <li><a class="nav-button" href="aboutus.html">about us</a></li>
+          </div>
+        </ul>
+      </nav>
+      <button
+        id="change-language"
+        aria-label="Change website language to Swedish"
+      >
+        <svg
+          id="Layer_1"
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 48.84 48.84"
+        >
+          <defs></defs>
+          <path
+            class="cls-3"
+            d="M41.69,7.15c-1.81-1.81-5.94-.92-10.93,1.96-1.49-5.56-3.78-9.11-6.34-9.11s-4.85,3.55-6.34,9.11c-4.98-2.87-9.11-3.77-10.92-1.96-1.81,1.81-.92,5.94,1.96,10.93-5.56,1.49-9.11,3.78-9.11,6.34s3.55,4.85,9.11,6.34c-2.87,4.98-3.77,9.11-1.96,10.93,1.81,1.81,5.94.92,10.93-1.96,1.49,5.56,3.78,9.11,6.34,9.11s4.85-3.55,6.34-9.11c4.98,2.87,9.12,3.77,10.93,1.96s.92-5.94-1.96-10.93c5.55-1.49,9.11-3.78,9.11-6.34s-3.56-4.85-9.11-6.34c2.87-4.98,3.77-9.11,1.96-10.93Z"
+          />
+          <circle class="cls-2" cx="24.42" cy="24.42" r="13" />
+          <g>
+            <path
+              class="cls-1"
+              d="M15.33,29.97v-11.1h1.5v11.1h-1.5ZM16.36,20.24v-1.38h6.29v1.38h-6.29ZM16.36,24.97v-1.33h5.84v1.33h-5.84ZM16.36,29.97v-1.38h6.37v1.38h-6.37Z"
+            />
+            <path
+              class="cls-1"
+              d="M24.77,29.97v-11.1h1.06l.45,1.76v9.34h-1.5ZM32.45,29.97l-6.82-9.09.19-2.02,6.83,9.09-.21,2.02ZM32.45,29.97l-.45-1.65v-9.46h1.5v11.1h-1.06Z"
+            />
+          </g>
+        </svg>
+      </button>
+      <button id="hamburger-menu-button" aria-label="Open hamburger menu">
+        <img
+          class="hamburger-icon"
+          src="assets/hamburger.svg"
+          alt="hamburger menu icon"
+        />
+      </button>
+    </header>
+    <main>
+      <div class="hero-grid">
+        <img
+          class="hero-background"
+          src="assets/pexels-adaskimk-903939cropped.jpg"
+          alt="Globular yellow flowers."
+        />
+        <h1 class="hero-text">ABOUT US</h1>
+      </div>
+      <section class="picture-text-grid">
+        <div class="text-grid">
+          <h2 class="body-title">Our story</h2>
+          <p class="body-text">
+            Ringblomman bageri started as nothing but the dream in the playful
+            mind of little Erika Lindström, who grew up to found this bakery in
+            2028. Ever since she was a child, she had always imagined a world
+            where all life on earth can live in harmony; Humans with humans,
+            humans to our fellow animals and everyone with nature.
+          </p>
+          <p class="body-text">
+            Her dream was so strong and it only grew over the years, having her
+            base nearly her entire life on making it a reality. Having grown up
+            in Jönköping and after finishing her studies at Jönköping
+            University, she managed to scrounge up enough money to get started
+            on this bakery, now she, as well as the rest of us here at
+            Ringblomman, hope to provide a wonderful experience for our
+            visitors!
+          </p>
+        </div>
+        <img
+          class="picture-text-portrait"
+          src="assets/pexels-alaxmatias-25645934.jpg"
+          alt="The owner smiling, wearing a dress and boots on a sunny road in front of a car."
+        />
+        <img
+          id="picture-about-left"
+          src="assets/pexels-kampus-8380048.jpg"
+          alt="The Ringblomman bageri team members sharing a drink on a beach."
+        />
+        <img
+          id="picture-about-right"
+          src="assets/pexels-kampus-8380098.jpg"
+          alt="The Ringblomman bageri team members smiling towards the camera while laying down and embracing each other."
+        />
+      </section>
+      <div class="picture-grid"></div>
+    </main>
+    <footer class="footer">
+      <div class="footer-column-1">
+        <address class="footer-info">
+          <h2 id="footer-contact">Contact:</h2>
+          <h3>Phone number:</h3>
+          <a class="contact-details" href="tel:55555555555555"
+            >555-5555-5555-555</a
+          ><br />
+          <h3>Email:</h3>
+          <a class="contact-details" href="mailto:bageri@ringblomman.se"
+            >bageri@ringblomman.se</a
+          >
+          <br />
+          <h2 id="footer-location">Find us:</h2>
+          <h3>Address:</h3>
+          Östra Storgatan 1 <br />
+          Jönköping 553 21
+        </address>
+      </div>
+      <div class="footer-column-2">
+        <div id="map"></div>
+      </div>
+      <div class="footer-column-3">
+        <article class="hours">
+          <h2>Opening hours:</h2>
+          <article class="day-hours">
+            <h3>Monday-Friday</h3>
+            <p>11:00-20:00</p>
+          </article>
+          <article class="day-hours">
+            <h3>Saturday</h3>
+            <p>12:00-18:00</p>
+          </article>
+          <article class="day-hours">
+            <h3>Sunday</h3>
+            <p>12:00-16:00</p>
+          </article>
+        </article>
+      </div>
+    </footer>
+  </body>
+</html>

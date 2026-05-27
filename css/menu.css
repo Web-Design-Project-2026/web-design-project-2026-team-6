@@ -1,0 +1,100 @@
+/* MENU */
+main {
+  place-items: normal;
+}
+
+.allergy-legend {
+  display: grid;
+  margin: var(--header-spacing-top) 3vw 0 3vw;
+  width: 24%;
+}
+
+.menu-category {
+  display: grid;
+  margin: var(--header-spacing-top) 3vw 0 3vw;
+}
+
+.menu-category-text {
+  font: var(--font-title-outfit);
+  margin: 0 0 0.5vw 1.5vw;
+}
+
+.menu-item-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-radius: 23px;
+  border-top: 1px solid var(--color-black);
+  gap: 1vw;
+  padding: 1vw;
+}
+
+.menu-item {
+  display: grid;
+  background-color: var(--color-white);
+  border-radius: 23px;
+  padding: 1.5vw 1vw;
+  gap: 1vw;
+}
+
+.menu-item-image {
+  width: 100%;
+  place-self: center;
+}
+
+.menu-item-title {
+  font: var(--font-title-outfit);
+}
+
+.menu-item-paragraph {
+  font: var(--font-outfit);
+}
+
+.allergen-symbol-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2vw;
+}
+
+.allergren-symbol {
+  width: 3vw;
+}
+
+/* Break points */
+
+@media screen and (max-width: 1157px) {
+  .allergy-legend {
+    width: 45%;
+  }
+
+  .menu-item-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .menu-item {
+    padding: 3vw 2vw;
+  }
+
+  .allergren-symbol {
+    width: 5vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+
+  .allergy-legend {
+    width: 95%;
+    place-self: center;
+  }
+
+  .menu-item-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .menu-item {
+    padding: 4vw 3vw;
+  }
+
+  .allergren-symbol {
+    width: 10vw;
+  }
+}

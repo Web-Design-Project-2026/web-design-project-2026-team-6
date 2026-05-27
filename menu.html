@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu | Ringblommans Bageri</title>
+    <link rel="icon" href="assets/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <link rel="stylesheet" href="css/variable.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/menu.css" />
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo-container">
+        <a class="logo-text" href="index.html">Ringblommans Bageri</a>
+      </div>
+      <nav>
+        <ul>
+          <div id="nav-links">
+            <li><a class="nav-button" href="menu.html">menu</a></li>
+            <li><a class="nav-button" href="events.html">events</a></li>
+            <li><a class="nav-button" href="aboutus.html">about us</a></li>
+          </div>
+        </ul>
+      </nav>
+      <button
+        id="change-language"
+        aria-label="Change website language to Swedish"
+      >
+        <svg
+          id="Layer_1"
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 48.84 48.84"
+        >
+          <defs></defs>
+          <path
+            class="cls-3"
+            d="M41.69,7.15c-1.81-1.81-5.94-.92-10.93,1.96-1.49-5.56-3.78-9.11-6.34-9.11s-4.85,3.55-6.34,9.11c-4.98-2.87-9.11-3.77-10.92-1.96-1.81,1.81-.92,5.94,1.96,10.93-5.56,1.49-9.11,3.78-9.11,6.34s3.55,4.85,9.11,6.34c-2.87,4.98-3.77,9.11-1.96,10.93,1.81,1.81,5.94.92,10.93-1.96,1.49,5.56,3.78,9.11,6.34,9.11s4.85-3.55,6.34-9.11c4.98,2.87,9.12,3.77,10.93,1.96s.92-5.94-1.96-10.93c5.55-1.49,9.11-3.78,9.11-6.34s-3.56-4.85-9.11-6.34c2.87-4.98,3.77-9.11,1.96-10.93Z"
+          />
+          <circle class="cls-2" cx="24.42" cy="24.42" r="13" />
+          <g>
+            <path
+              class="cls-1"
+              d="M15.33,29.97v-11.1h1.5v11.1h-1.5ZM16.36,20.24v-1.38h6.29v1.38h-6.29ZM16.36,24.97v-1.33h5.84v1.33h-5.84ZM16.36,29.97v-1.38h6.37v1.38h-6.37Z"
+            />
+            <path
+              class="cls-1"
+              d="M24.77,29.97v-11.1h1.06l.45,1.76v9.34h-1.5ZM32.45,29.97l-6.82-9.09.19-2.02,6.83,9.09-.21,2.02ZM32.45,29.97l-.45-1.65v-9.46h1.5v11.1h-1.06Z"
+            />
+          </g>
+        </svg>
+      </button>
+      <button id="hamburger-menu-button" aria-label="Open hamburger menu">
+        <img
+          class="hamburger-icon"
+          src="assets/hamburger.svg"
+          alt="hamburger menu icon"
+        />
+      </button>
+    </header>
+    <main>
+      <div class="hero-grid">
+        <img
+          class="hero-background"
+          src="assets/pexels-menu.png"
+          alt="Blurred tray with pastries."
+        />
+        <h1 class="hero-text">MENU</h1>
+      </div>
+      <img
+        class="allergy-legend"
+        src="assets/allergylegendsmall.svg"
+        alt="Allergy Legend."
+      />
+      <section class="menu-category">
+        <h2 class="menu-category-text">Pastries</h2>
+        <div class="menu-item-grid">
+          <article class="menu-item">
+            <img
+              class="menu-item-image"
+              src="assets/menu-items/pastries/semla.jpg"
+              alt="Two semlas on a table."
+            />
+            <h3 class="menu-item-title">Semla</h3>
+            <p class="menu-item-paragraph">A traditional Swedish sweet roll.</p>
+            <div class="allergen-symbols">
+              <img
+                class="allergren-symbol"
+                src="assets/nuts.svg"
+                alt="Contains Nut Allergen."
+              />
+            </div>
+          </article>
+          <article class="menu-item">
+            <img
+              class="menu-item-image"
+              src="assets/menu-items/pastries/kanelbullar.jpg"
+              alt="Three cinnamon rolls next to each other."
+            />
+            <h3 class="menu-item-title">Kanelbulle</h3>
+            <p class="menu-item-paragraph">
+              A cinnamon sweet roll with powdered sugar.
+            </p>
+            <div class="allergen-symbols"></div>
+          </article>
+          <article class="menu-item">
+            <img
+              class="menu-item-image"
+              src="assets/menu-items/pastries/wienerbröd.jpg"
+              alt="Wienerbröd on a plate."
+            />
+            <h3 class="menu-item-title">Wienerbröd</h3>
+            <p class="menu-item-paragraph">A delicious yeast dough dessert.</p>
+            <div class="allergen-symbols"></div>
+          </article>
+          <article class="menu-item">
+            <img
+              class="menu-item-image"
+              src="assets/menu-items/pastries/brownies.jpg"
+              alt="Three brownies on a plate."
+            />
+            <h3 class="menu-item-title">Brownie</h3>
+            <p class="menu-item-paragraph">A chocolate baked dessert bar.</p>
+            <div class="allergen-symbols"></div>
+          </article>
+          <article class="menu-item">
+            <img
+              class="menu-item-image"
+              src="assets/menu-items/pastries/blueberrymuffin.jpg"
+              alt="Two blueberry muffins on a sheet."
+            />
+            <h3 class="menu-item-title">Blåbärsmuffin</h3>
+            <p class="menu-item-paragraph">
+              A small, cup-shaped sweetened quickbread with blueberries.
+            </p>
+            <div class="allergen-symbols"></div>
+          </article>
+          <article class="menu-item">
+            <img
+              class="menu-item-image"
+              src="assets/menu-items/pastries/chocolatemuffin.jpg"
+              alt="Four chocolate muffins on a baking tray."
+            />
+            <h3 class="menu-item-title">Chokladmuffin</h3>
+            <p class="menu-item-paragraph">
+              A small, cup-shaped sweetened quickbread with chocolate.
+            </p>
+            <div class="allergen-symbols"></div>
+          </article>
+          <article class="menu-item">
+            <img
+              class="menu-item-image"
+              src="assets/menu-items/pastries/chokladbollar.jpg"
+              alt="A few chocolate balls out on a table."
+            />
+            <h3 class="menu-item-title">Chokladboll</h3>
+            <p class="menu-item-paragraph">
+              An unbaked oatmeal ball with chocolate and covered in coconut.
+            </p>
+            <div class="allergen-symbols"></div>
+          </article>
+          <article class="menu-item">
+            <img
+              class="menu-item-image"
+              src="assets/menu-items/pastries/oatmealcookies.jpg"
+              alt="A few oatmeal cookies on a plate."
+            />
+            <h3 class="menu-item-title">Havregrynskakor</h3>
+            <p class="menu-item-paragraph">
+              A cookie made from oatmeal, almonds and raisins.
+            </p>
+            <div class="allergen-symbols">
+              <img
+                class="allergren-symbol"
+                src="assets/nuts.svg"
+                alt="Containts Nut Allergen."
+              />
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="menu-category">
+        <h2 class="menu-category-text">Cakes</h2>
+        <div class="menu-item-grid">
+          <article class="menu-item">
+            <img
+              class="menu-item-image"
+              src="assets/menu-items/cake/kladdkaka.jpg"
+              alt="A piece of mud cake on a plate with whipped cream and mixed berries."
+            />
+            <h3 class="menu-item-title">Kladdkaka</h3>
+            <p class="menu-item-paragraph">
+              A dense, compact cake, features a crisp exterior and soft, gooey
+              interior.
+            </p>
+            <div class="allergen-symbol-grid"></div>
+          </article>
+          <article class="menu-item">
+            <img
+              class="menu-item-image"
+              src="assets/menu-items/cake/ostkaka.jpg"
+              alt="A piece of cheesecake on a plate."
+            />
+            <h3 class="menu-item-title">Ostkaka</h3>
+            <p class="menu-item-paragraph">
+              Sweet, crustless cake enjoyed with jam.
+            </p>
+            <div class="allergen-symbols"></div>
+          </article>
+          <article class="menu-item">
+            <img
+              class="menu-item-image"
+              src="assets/menu-items/cake/princesstårta.jpg"
+              alt="A piece of princess cake, with exposed green and white layers."
+            />
+            <h3 class="menu-item-title">Princesstårta</h3>
+            <p class="menu-item-paragraph">
+              Layer cake consisting of alternating layers of airy sponge cake
+              and a layer of whipped cream.
+            </p>
+            <div class="allergen-symbols">
+              <img
+                class="allergren-symbol"
+                src="assets/nuts.svg"
+                alt="Contains nut allergen."
+              />
+            </div>
+          </article>
+          <article class="menu-item">
+            <img
+              class="menu-item-image"
+              src="assets/menu-items/cake/redvelvet.jpg"
+              alt="A piece of red velvet cake on a plate."
+            />
+            <h3 class="menu-item-title">Red Velvet</h3>
+            <p class="menu-item-paragraph">
+              A red-colored layer cake with icing.
+            </p>
+            <div class="allergen-symbols"></div>
+          </article>
+        </div>
+      </section>
+      <section class="menu-category">
+        <h2 class="menu-category-text">Bread</h2>
+        <div class="menu-item-grid">
+          <article class="menu-item">
+            <img
+              class="menu-item-image"
+              src="assets/menu-items/bread/baguette.jpg"
+              alt="A basket with two long, crispy baguettes in it."
+            />
+            <h3 class="menu-item-title">Baguette</h3>
+            <p class="menu-item-paragraph">
+              A long, thin type of bread from France.
+            </p>
+            <div class="allergen-symbols"></div>
+          </article>
+          <article class="menu-item">
+            <img
+              class="menu-item-image"
+              src="assets/menu-items/bread/sourdough.jpg"
+              alt="Slices of traditional sourdough bread on a cutting board."
+            />
+            <h3 class="menu-item-title">Surdegsbröd</h3>
+            <p class="menu-item-paragraph">
+              Bread made from sour fermented dough.
+            </p>
+            <div class="allergen-symbols"></div>
+          </article>
+          <article class="menu-item">
+            <img
+              class="menu-item-image"
+              src="assets/menu-items/bread/poppyseedbread.jpg"
+              alt="A whole loaf of bread with poppy seeds on top on a cutting board."
+            />
+            <h3 class="menu-item-title">Vallmobröd</h3>
+            <p class="menu-item-paragraph">
+              A bread made with poppy seeds in the dough and sprinkled on top.
+            </p>
+            <div class="allergen-symbols">
+              <img
+                class="allergren-symbol"
+                src="assets/sesame.svg"
+                alt="Containts sesame allergen."
+              />
+            </div>
+          </article>
+          <article class="menu-item">
+            <img
+              class="menu-item-image"
+              src="assets/menu-items/bread/ryebread.jpg"
+              alt="Thin pieces of rye bread, scattered on a red cloth with baking flour residue around them."
+            />
+            <h3 class="menu-item-title">Rågbröd</h3>
+            <p class="menu-item-paragraph">
+              A bread made with flour from rye grain.
+            </p>
+            <div class="allergen-symbols"></div>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-column-1">
+        <address class="footer-info">
+          <h2 id="footer-contact">Contact:</h2>
+          <h3>Phone number:</h3>
+          <a class="contact-details" href="tel:55555555555555"
+            >555-5555-5555-555</a
+          ><br />
+          <h3>Email:</h3>
+          <a class="contact-details" href="mailto:bageri@ringblomman.se"
+            >bageri@ringblomman.se</a
+          >
+          <br />
+          <h2 id="footer-location">Find us:</h2>
+          <h3>Address:</h3>
+          Östra Storgatan 1 <br />
+          Jönköping 553 21
+        </address>
+      </div>
+      <div class="footer-column-2">
+        <div id="map"></div>
+      </div>
+      <div class="footer-column-3">
+        <article class="hours">
+          <h2>Opening hours:</h2>
+          <article class="day-hours">
+            <h3>Monday-Friday</h3>
+            <p>11:00-20:00</p>
+          </article>
+          <article class="day-hours">
+            <h3>Saturday</h3>
+            <p>12:00-18:00</p>
+          </article>
+          <article class="day-hours">
+            <h3>Sunday</h3>
+            <p>12:00-16:00</p>
+          </article>
+        </article>
+      </div>
+    </footer>
+  </body>
+</html>
